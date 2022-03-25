@@ -12,10 +12,18 @@ const Main = () => {
     }, [])
     const showDetails = (product) => {
         const newCart = [...detail, product];
+        if(newCart.length > 4){
+         alert('You cannot add more than 4 items')
+         return;
+        }
         setDetails(newCart)
     }
     const removeDetails = ()=>{
         setDetails([]);
+    }
+    const randomItem = ()=>{
+        const randomNum = Math.ceil(Math.random() * 4);
+        alert('buy '+ randomNum+'th number product');
     }
     return (
         <div className='main-area'>
@@ -33,7 +41,7 @@ const Main = () => {
                     detail.map(data => <h4>{data.name}</h4>)
                 }
                 <div>
-                    <button className='btn-one'>CHOOSE 1 FOR ME</button>
+                    <button onClick={randomItem} className='btn-one'>CHOOSE 1 FOR ME</button>
                     <button onClick={removeDetails} className='btn-two'>CHOOSE AGAIN</button>
                 </div>
             </div>
