@@ -1,0 +1,11 @@
+.header{
+    text-align: center;
+}
+.header h1{
+    padding: 20px 0;
+    background-color: #03203C;
+    color: #fff;
+}
+.header h2{
+    padding: 10px 0;
+}
