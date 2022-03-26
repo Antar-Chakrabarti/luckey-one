@@ -42,7 +42,7 @@ const Main = () => {
                <div className="selected-cart">
                     <h2>selected items</h2>
                     {
-                        detail.map(data => <h4>{data.name}</h4>)
+                        detail.map(data => <h4 className='random'>{data.name}</h4>)
                     }
                     <div>
                         <button onClick={() => randomItem(products)} className='btn-one'>CHOOSE 1 FOR ME</button>
