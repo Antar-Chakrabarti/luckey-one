@@ -17,7 +17,18 @@
     padding: 10px;
     color:rgb(209, 212, 35);
 }
-
+.random{
+    background-color: #fff;
+    padding: 10px 5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #000;
+}
+.selected-cart{
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgb(20, 144, 160), -10px -10px 10px rgb(20, 144, 160);
+    margin-right: 20px;
+    margin-top: 20px;
+}
 
 
 
